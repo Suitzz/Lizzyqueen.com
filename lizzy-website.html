@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<title>lizzyqueen
+</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="ageVerification">
+        <div class="verification-content">
+            <h2>Age Verification</h2>
+            <p class="verification-description">This website contains content suitable only for adults. Please confirm that you are over 18 years old.</p>
+            <button class="verification-button" onclick="confirmAge()">
+                <img src="+18.svg" alt="+18 logo" width="24" height="24" style="margin-right: 10px;">
+                I am over 18
+            </button>
+            <button class="verification-button" onclick="declareUnderage()" style="margin-top: 10px;">
+                <img src="-18.svg" alt="-18 logo" width="24" height="24" style="margin-right: 10px;">
+                I am underage
+            </button>            
+        </div>
+    </div> 
+
+    <!-- Circular image container -->
+    <div class="circle-image">
+        <img src="lizzy.jpeg" alt="Circular Image">
+        
+    </div>
+
+    <!-- Heading -->
+    <h1>Lizzy :)</h1>
+    <h2>Where laughter knows no bounds, and the spirit runs wild.</h2>
+
+    <!-- Main share buttons outside of the menu -->
+    <div class="button-container">
+        <button class="social-button" onclick="window.open('https://www.instagram.com/lizzy33queen?igshid=NGVhN2U2NjQ0Yg%3D%3D', '_blank')">
+            <div class="new-button">
+                 <img src="instagram.svg" alt="Instagram Logo" width="24" height="24"> 
+                </div>
+                <div class="new-button">
+                    Instagram
+                </div>
+        </button>
+        <button class="social-button" onclick="window.open('https://twitter.com/lizzy33queen?s=21', '_blank');">
+            <div class="new-button">
+                <img src="twitter.svg" alt="Twitter Logo" width="24" height="24">
+            </div>
+            <div class="new-button">
+                Twitter
+            </div>
+        </button>
+        <button class="social-button" onclick="window.open('https://www.tiktok.com/@lizzy33queen?_t=8gDCQgao0sS&_r=1', '_blank');">
+            <div class="new-button">
+                <img src="tiktok.svg" alt="TikTok Logo" width="24" height="24">
+            </div>
+            <div class="new-button">
+                TikTok
+            </div>
+        </button>
+        <button class="social-button" onclick="window.open('https://onlyfans.com/lizzyqueen33', '_blank');">
+            <div class="new-button"> 
+                <img src="onlyfans.svg" alt="OnlyFans Logo" width="24" height="24">
+            </div>
+                <div class="new-button">
+                    OnlyFans
+                </div>
+        </button>
+    </div>
+
+   <!-- Menu icon -->
+<div class="menu-icon-container">
+    <div class="menu-icon" onclick="toggleMenu(event)"></div>
+</div>
+
+ <!-- Share options menu -->
+<div class="share-menu" id="shareMenu">
+    <button onclick="shareOnSocialMedia('twitter', 'https://lizzyqueen.com')">Twitter</button>
+    <button onclick="shareOnSocialMedia('whatsapp', 'https://lizzyqueen.com')">WhatsApp</button>
+    <button onclick="shareOnSocialMedia('facebook', 'https://lizzyqueen.com')">Facebook</button>
+    <button onclick="copyLink()"><i><b>Copy Link</b></i></button>
+</div>
+
+    <!-- Pop-up content -->
+    <div id="popup" class="popup">
+        <p>This is additional information in the pop-up. You can customize this content.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- Cookie Preference link -->
+    <div class="cookie-preference-link" id="cookie-preference-link">
+        <a href="https://github.com/cadavidf/Summer2/blob/main/folder1/cookiepolicy.html">Cookie  <br> Policies</a>
+    </div>
+
+     <!-- Overlay div -->
+     <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+     <script src="script.js"></script>
+</body>
+
+</html>
